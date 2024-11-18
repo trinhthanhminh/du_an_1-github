@@ -21,7 +21,7 @@
     
     <div class="sidebar">
         <div class="sidebar-logo">
-            <a href="./index.html">
+            <a href="index.html">
                 <img src="../asset/images/logo.png" alt="Protend logo" width="200px">
                 <style>
                     .sidebar-logo img{
@@ -140,44 +140,44 @@
 </div>
 
 
+
+<!--   Phần content -->
 <div class="main">
     <div class="main-content dashboard">
-        <form action="./index.php?act=listbl" method="post">
-            <table class=" table">
-                <tr class="table-primary">
-                    <th></th>
-                    <th>ID BÌNH LUẬN</th>
-                    <th>TÊN ĐĂNG NHẬP</th>
-                    <th>HỌ VÀ TÊN</th>
-                    <th>NỘI DUNG</th>
-                    <th>MÃ NGƯỜI DÙNG</th>
-                    <th>MÃ SẢN PHẨM</th>
-                    <th>NGÀY BÌNH LUẬN</th>
-                    <th></th>
-                </tr>
-                
-                <tr class="table-success">
-                    <td><input type="checkbox"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>
-                        <a href=""><input class="btn btn-success" type="button" name="sua" value="Sửa"></a>
-                        <a href=""><input class="btn btn-warning" type="button" value="Xóa"></a>
-                    </td>
-                </tr>
+        <div class="row">
+            <form action="./index.php?act=listcolor" method="get">
+                <table class=" table">
+                    <tr class="table-primary">
+                        <th></th>
+                        <th>Mã loại</th>
+                        <th>Tên color</th>
+                        <th></th>
+                    </tr>
+                            <tr class="table-success">
+                                <td><input type="checkbox"></td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <a href=""><input class="btn btn-success"  type="button" name="sua" value="Sửa"></a>
+                                    <a href=""><input class="btn btn-warning" type="button" name="delete" value="Xóa"></a>
+                                </td>
+                            </tr>
+                            
+                  
+                   
 
-            </table>
-            <input type="submit" class="btn btn-success" value="Chọn tất cả"></input>
-            <input type="submit" class="btn btn-danger" value="Bỏ chọn tất cả"></input>
-            <input type="submit" class="btn btn-warning" value="Xóa các mục chọn"></input>
-        </form>
+                </table>
+                <input type="button" class="btn btn-success" value="Chọn tất cả"></input>
+                    <input type="button" class="btn btn-danger" value="Bỏ chọn tất cả"></input>
+                    <input type="button" class="btn btn-warning" value="Xóa các mục chọn"></input>
+                    <a href=""><input type="button" class="btn btn-info" value="Thêm mới"></input></a>
+            </form>
+
+        </div>
+
     </div>
 </div>
+
 
 <div class="overlay"></div>
 
@@ -198,7 +198,6 @@
 <script src="../src/admin/js/shortcode.js"></script>
 <script src="../src/admin/js/pages/dashboard.js"></script>
 </body>
-
 
 
 </html>

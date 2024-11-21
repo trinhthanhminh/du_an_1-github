@@ -18,7 +18,7 @@ $(document).ready(function () {
         // console.log(orderId);
         $.ajax({
           type: "POST",
-          url: "../../du_an1/admin/index.php?act=change_status",
+          url: "../../du_an_1-github/admin/index.php?act=change_status",
           data: {
             orderStatus: orderStatus,
             orderId: orderId,

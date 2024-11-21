@@ -13,7 +13,7 @@ $(document).ready(function () {
       let sizeId = $(that).prev().attr("size-id");
       let quantity = $(that).prev().attr("data-quantity");
       $.ajax({
-        url: "../../du_an1/admin/index.php?act=show_product_update",
+        url: "../../du_an_1-github/admin/index.php?act=show_product_update",
         type: "POST",
         data: {
           productId: productId,
